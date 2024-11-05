@@ -1,7 +1,8 @@
 # repositoriopublicoSRI-5
 ## DNS
-### Configura un contenedor coa imaxe oficial de bind9 usando docker-compose.
+## Configura un contenedor coa imaxe oficial de bind9 usando docker-compose.
 
+### Crear carpeta bind 9 y fichero docker compose
 mkdir bind9-docker
 
 touch docker-compose.yml
@@ -9,7 +10,8 @@ touch docker-compose.yml
 
 
 
-
+### Configuracion fichero docker compose
+-- >Primero para entrar lo que hice fue entrar con nano en el archivo y ponerle lo siguiente:
 
 version: '3.8' 
 
@@ -18,7 +20,7 @@ services:
     image: internetsystemsconsortium/bind9:9.18
     container_name: bind9
 
-    ports:
+    ports: 
       - "53:53/tcp"
       - "53:53/udp"
 
@@ -27,10 +29,10 @@ services:
       - ./zones:/etc/bind/zones
       - ./logs:/var/log/bind
 
-    restart: unless-stoppedsudo
+    restart: unless-stoppedsudo>
     
     
-    docker-compose up -d
+  Para comprobar que se hizo bien y va bien   *docker-compose up -d*
 
 ### - SUbir todo a Git
 
