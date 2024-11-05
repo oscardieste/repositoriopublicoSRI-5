@@ -11,7 +11,7 @@ touch docker-compose.yml
 
 
 ### Configuracion fichero docker compose
--- >Primero para entrar lo que hice fue entrar con nano en el archivo y ponerle lo siguiente:
+-- >Primero para entrar lo que hice fue entrar con nano docker-compose.yml en el archivo y ponerle lo siguiente:
 
 version: '3.8' 
 
