@@ -1,4 +1,11 @@
 # repositoriopublicoSRI-5
 ## DNS
 ### Configura un contenedor coa imaxe oficial de bind9 usando docker-compose.
-Para crear o contenedor, primeiro entrei nunha carpeta chamada 'composetest' e creei os arquivos necesarios. O importante o arquivo docker-compose.yml, onde poñemos o seguinte:
+
+### Usa os volumes como se explica no setup da imaxe
+
+### Unha comprobado que o contenedor funciona, sube a GitHub o ficheiro nun repo.
+
+### Pega na resposta o enlace ó repo.
+
+### Engade un Readme.md explicando as opcións do docker-compose.yml
